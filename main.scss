@@ -1,0 +1,37 @@
+
+
+$blue: #0997d3;
+$red: #e84610;
+$green: #bada55;
+$black: #000000;
+$white: #ffffff;
+
+$colors: (
+      black: #000000,
+      red: #e84610,
+      green: #bada55
+);
+
+@each $key, $value in $colors {
+    .item-#{$key} {
+        background-color: $value;
+    }
+}
+
+body {
+    background-color: $black;
+}
+
+div {
+    border: 1px solid $black;
+}
+
+h1 {
+    color: $white;
+}
+
+$class: container;
+
+div.#{$class} {
+    background-color: orange;
+}
